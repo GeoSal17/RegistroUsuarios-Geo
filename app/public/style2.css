@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.chart{
+    padding: 2rem;
+    border: 1px slateblue;
+    border-radius: 1rem;
+}
+
+.chart-container {
+    position: relative;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    max-width: 600px; 
+    height: 300px; 
+}
+
+.container-chart{
+    background-color:  #fdfdfd;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.content-wrapper{
+    width: 100%;
+    align-items: normal;
+}
