@@ -1,6 +1,5 @@
 import  express  from "express";
 import cookieParser from 'cookie-parser';
-//Fix para __direname
 import path from 'path';
 import {fileURLToPath} from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -23,8 +22,6 @@ app.use(express.static(__dirname + "/public"));
 app.use('/admin', express.static(path.join(__dirname, 'admin')));
 app.use(express.json());
 app.use(cookieParser());
-
-
 
 //Rutas
 app.get("/",authorization.soloPublico, (req,res)=> res.sendFile(__dirname + "/pages/login.html"));
